@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CGV | Hotel HOTELCOP</title>
+        <meta name="author" content="Aminata & Guillaume">
+        <meta name="description" content="Aminagui.Co a le plaisir de vous inviter dans leur hôtel de luxe, L'hôtel HôtelCop.">
+        <meta name="keywords" content="paris, hôtel, palace, luxe, spa, massage">
+
+        <!-- BOOSTRAP / JQUERY(UI) / FONT AWESOME -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" rel="stylesheet">
+
+        <!-- FONT-FAMILY -->
+        <link href="https://fonts.googleapis.com/css?family=Judson&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+        <!-- CSS ET JSS PERSO -->
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+
+        <!-- MENU FIXED -->
+
+        <div class="decalage-menu" id="accueil"></div>
+        <div class="menu">
+            <div class="fixed-top">
+
+                <!-- DIV RECHERCHE -->
+
+                <div id="barre_recherche">
+                    <div class="row justify-content-start align-items-center">
+                        <a href="" class="ml-5 mr-4"><img src="images/trame/loupe-noire.png" alt="Rechercher" class="loupe mt-0"></a>
+                        <input class="" type="text" name="recherche" id="recherche-input" placeholder="Rerchercher un restaurant, un casino, un spectacle... ">
+                    </div>
+                </div>
+
+                <!-- LES DEUX NAVBARS -->
+
+                <nav class="nav1 d-none d-md-block">
+                    <div class="row centre">
+                        <ul class="row">
+                            <li class="decalage"></li>
+                            <li style="color:white" id="date_nav"><script>afficheDate(); timer = window.setInterval("afficheDate()", 1000);</script></li>
+                            <li class="border-right"><a href='https://www.google.com/maps/place/1+Avenue+Montaigne,+75008+Paris/@48.8650712,2.2998897,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66fdd0dd39a4d:0x508194b82b12f012!8m2!3d48.8650712!4d2.3020784' target="_blank"><img src="images/trame/logo-maps.png" alt="Localisation" class="maps"></a></li>
+                        </ul>
+                        <ul class="row">
+                            <li class="plop">
+                                <button id="recherche_nav" style="color: white">
+                                    <img src="images/trame/loupe-blanche.png" alt="Recherche" class="loupe2">
+                                    <span>Recherche</span>
+                                </button>
+                            </li>
+                            <li>
+                                <select id="pays" name="pays">
+                                    <option value="fr">Fr</option>
+                                    <option value="all">En</option>
+                                </select>
+                            </li>
+                            <li class="decalage"><a href="panier.html" class="gold"><i class="fas fa-shopping-cart mr-3"></i>Panier</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="fond">
+                    <div class="container position-relative">
+                        <nav class="nav2 navbar navbar-expand-md">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                                <ul class="navbar-nav text-left">
+                                    <li class="nav-item">
+                                        <a class="nav-link mt-4 mt-md-0" href="chambre.html">CHAMBRES / SUITES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="restaurant.html">RESTAURANT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="bien-etre.html">BIEN-ÊTRE</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHotel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            L'HOTEL
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="hotel.html#qui">Qui sommes-nous</a>
+                                            <a class="dropdown-item" href="hotel.html#acces">Accès</a>
+                                            <a class="dropdown-item" href="hotel.html#evenement">Evénements</a>
+                                            <a class="dropdown-item" href="hotel.html#presse">Presse</a>
+                                            <a class="dropdown-item" href="contact.html">Contact</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="livre-d-or.html">LIVRE D'OR</a>
+                                    </li>
+                                    <li class="nav-item dropdown d-md-none">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLangue" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            LANGUE
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="">Français</a>
+                                            <a class="dropdown-item" href="">English</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item d-md-none">
+                                        <a class="nav-link" href="panier.html">PANIER</a>
+                                    </li>
+                                    <li class="nav-item d-md-none">
+                                        <button type="button" class="agold" data-toggle="modal" data-target="#modalReservation" data-whatever="@getbootstrap">RESERVER</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <a href="index.html#accueil" class="logo d-block d-md-none">HôtelCop</a>
+                        <button class="recherche d-md-none" id="recherche_nav_sm">
+                            <img src="images/trame/loupe-noire.png" alt="Recherche" class="loupe">
+                        </button>
+                    </div>
+                    <button type="button" class="reserver d-none d-md-block" data-toggle="modal" data-target="#modalReservation" data-whatever="@getbootstrap">RESERVER</button>
+                    <a href="index.html#accueil" class="logo2 d-none d-md-block">HôtelCop</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL FORM RESERVATION -->
+
+        <div class="modal fade" id="modalReservation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title mx-auto gold" id="exampleModalLabel1">Réservation</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row justify-content-center">
+                            <div class="form-group col-8">
+                                <label for="nom">Nom</label>
+                                <input class="form-control mt-2" type="text" name="nom" id="nom" placeholder="Saisissez votre nom">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="prenom">Prénom</label>
+                                <input class="form-control mt-2" type="text" name="prenom" id="prenom" placeholder="Saisissez votre prénom">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="email">Email</label>
+                                <input class="form-control mt-2" type="email" name="email" id="email" placeholder="Saisissez votre email">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="numero">Téléphone</label>
+                                <input class="form-control mt-2" type="tel" name="numero" id="numero" placeholder="Saisissez votre n° de téléphone">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="datepicker1">Arrivée</label>
+                                <input  class="form-control mt-2" type="text" name="arrivee" id="datepicker1">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="datepicker2">Départ</label>
+                                <input class="form-control mt-2" type="text" name="depart" id="datepicker2">
+                            </div>
+                            <div class="form-group col-12 mb-4">
+                                <label for="chambre">Gamme de chambre</label>
+                                <select id="chambre">
+                                    <option>-</option>
+                                    <option>Confort</option>
+                                    <option>Classique</option>
+                                    <option>Deluxe</option>
+                                    <option>Suite</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="nbr-chambres">Chambres</label>
+                                <select id="nbr-chambres" name="nbr-chambres">
+                                    <option>-</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group mr-4 ml-4">
+                                <label for="adulte">Adultes</label>
+                                <select name="persons" id="adulte">
+                                    <option>-</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="enfant">Enfants</label>
+                                <select name="persons" id="enfant">
+                                    <option>-</option>
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn agold mx-auto">Confirmer réservation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL FORM RESERVATION MASSAGE -->
+
+        <div class="modal fade" id="modalReservationMassage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title mx-auto gold" id="exampleModalLabel2">Réservation</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row justify-content-center">
+                            <div class="form-group col-8">
+                                <label for="nomM">Nom</label>
+                                <input class="form-control mt-2" type="text" name="nomM" id="nomM" placeholder="Saisissez votre nom">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="prenomM">Prénom</label>
+                                <input class="form-control mt-2" type="text" name="prenomM" id="prenomM" placeholder="Saisissez votre prénom">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="emailM">Email</label>
+                                <input class="form-control mt-2" type="email" name="emailM" id="emailM" placeholder="Saisissez votre email">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="numeroM">Téléphone</label>
+                                <input class="form-control mt-2" type="tel" name="numeroM" id="numeroM" placeholder="Saisissez votre n° de téléphone">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="datepicker3">Jour</label>
+                                <input  class="form-control mt-2" type="text" name="jour" id="datepicker3">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="arrivee">Horaire</label>
+                                <input  class="form-control mt-2" type="time" name="arrivee" id="arrivee">
+                            </div>
+                            <div class="form-group col-12 mb-4">
+                                <label for="massage">Gamme de massage</label>
+                                <select id="massage">
+                                    <option>-</option>
+                                    <option>Soin Détente</option>
+                                    <option>Soin Découverte</option>
+                                    <option>Soin Relaxant</option>
+                                    <option>Soint Plaisir</option>
+                                </select>
+                            </div>
+                            <div class="form-group mr-4">
+                                <label for="adultes">Nombres de personne</label>
+                                <select name="persons" id="adultes">
+                                    <option>-</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn agold mx-auto">Confirmer réservation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="decal_menu_recherche"></div> <!-- Décale la page en cas d'ouverture de la barre recherche -->
+
+        <header class="header-vide">
+            <div class="en-tete row flex-column">
+                <h1>HOTELCOP PARIS</h1>
+                <div class="row mt-4">
+                    <a href="" class="mr-3">
+                        <img src="images/trame/partage.png" alt="Partager" class="partage">
+                    </a>
+                    <a href="">
+                        <img src="images/trame/imprimer.png" alt="Imprimer" class="partage">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="text-left">
+                <h3>Conditions Générales de <span class="gold">Vente</span></h3>
+
+                <h6>I  Application</h6>
+                <p>Les présentes conditions générales de vente (ci-après : « CGV ») s’appliquent aux opérations de ventes conclues par l’Hôtel (ci-après : « la Société ») avec le Client.</p>
+                <p>Elles annulent et remplacent toute version précédente ayant pu être mise en ligne et/ou acceptée par le Client.</p>
+                <p>Les présentes CGV s’appliquent à toute utilisation du site, notamment à la commercialisation par internet et par téléphone de toutes les prestations proposées sur le Site par la Société HOTELCOP.</p>
+                <p>Il est donc impératif que le Client lise attentivement les CGV qui sont référencées par lien hypertexte sur chaque page du site. Il lui est notamment conseillé de les télécharger et/ou de les imprimer afin d’en conserver une copie au jour de sa commande dès lors que celles-ci sont susceptibles d’être modifiées, étant toutefois précisé que de telles modifications seront inapplicables aux commandes de Prestations effectuées antérieurement.</p>
+                <p>Les CGV peuvent être complétées par des conditions de vente particulières figurant sur le descriptif de la prestation ainsi que par les conditions de vente des prestataires, accessibles soit sur leur Site internet, soit sur place.</p>
+
+                <h6>II   Capacité</h6>
+                <p>Le Client reconnaît avoir la capacité de contracter, c’est-à-dire avoir la majorité légale et ne pas être sous curatelle ou sous tutelle.</p>
+                <p>Le Client déclare également utiliser le Site conformément aux présentes CGV, en son nom et au nom et pour le compte de tous les bénéficiaires des prestations commandées par ses soins sur le Site dont il reconnaît être le mandataire (ci-après : les « Bénéficiaires ») et auxquels les présentes CGV seront opposables.</p>
+                <p>Le Client est responsable financièrement de l’utilisation du Site faite tant en son nom que pour le compte des Bénéficiaires, sauf à démontrer une utilisation frauduleuse ne résultant d’aucune faute ou négligence de sa part.</p>
+                <p>Le Client garantit la véracité et l’exactitude des informations fournies par lui en son nom et au nom et pour le compte de tous les Bénéficiaires utilisant ses données sur le Site.</p>
+                <p>La Société se réserve le droit à tout moment de ne pas contracter avec un Client qui ferait une utilisation frauduleuse du Site ou qui contreviendrait aux présentes CGV.</p>
+                <p>Il est à cet égard rappelé les termes de l'article 313-1 du Code Pénal français :" L'escroquerie est le fait, soit par l'usage d'un faux nom ou d'une fausse qualité, soit par l'abus d'une qualité vraie, soit par l'emploi de manœuvres frauduleuses de tromper une personne physique ou morale et de la déterminer ainsi, à son préjudice ou au préjudice d'un tiers, à remettre des fonds, des valeurs ou un bien quelconque, à fournir un service ou à consentir un acte opérant obligation ou décharge. L'escroquerie est punie de cinq ans d'emprisonnement et de 375.000 € d'amende ".</p>
+
+                <h6>III   Droit de rétractation</h6>
+                <p>En application des dispositions de l’article L 121-21-8 du Code de la Consommation, les prestations proposées sur le Site par la Société ne sont pas soumises à l’application du droit de rétractation prévu aux articles L. 121-21 et suivants du code de la consommation en matière de vente à distance.</p>
+                <p>En conséquence, les prestations commandées sur le Site sont exclusivement soumises aux conditions d’annulation et de modification prévues aux présentes CGV et le Client ne pourra pas invoquer le droit à rétractation.</p>
+
+                <h6>IV  Prix</h6>
+                <p>Les prix sont indiqués en Euros. La TVA est inclue dans les tarifs proposés. Tout changement du taux applicable, ou toute modification ou instauration de nouvelles taxes légales instaurées par les autorités compétentes, sera répercuté automatiquement sur les prix indiqués à la date de facturation.</p>
+                <p>Les tarifs s’entendent par chambre pour le nombre de personnes indiqué et selon la période sélectionnée.</p>
+                <p>Les prix indiqués ne comprennent que les prestations strictement mentionnées dans la réservation. Au prix mentionné dans la réservation seront ajoutées les prestations complémentaires fournies par l’hôtelier lors du séjour et, le cas échéant, la taxe de séjour.</p>
+                <p>Les prix mentionnés sur le Site sont susceptibles de modification à tout moment par l’Hôtel sans information préalable ni préavis. Seul le prix indiqué dans la confirmation de réservation par la Société est contractuel.</p>
+                <p>Aucun séjour réservé avant la mise en place d’une éventuelle offre promotionnelle ne fera l’objet de remboursement, même partiel.</p>
+                <p>Choisissez de payer votre facture dans votre devise lors de l’utilisation de votre carte de crédit Visa ou Mastercard et bénéficiez du meilleur taux de change et des commissions de change les plus avantageuses à votre départ.</p>
+
+                <h6>V   Commandes en ligne</h6>
+                <p>Le Client doit obligatoirement, lors de la passation de sa commande :</p>
+                <p>–        remplir la fiche d’identification sur laquelle il indiquera toutes les coordonnées demandées ou donner son numéro de Client s’il en a un,</p>
+                <p>–        remplir le bon de commande en ligne en donnant toutes les références des produits ou services choisis,</p>
+                <p>–        valider sa commande après l’avoir vérifiée,</p>
+                <p>–        effectuer le paiement dans les conditions prévues et confirmer sa commande et son règlement en cas d’option pour un plan en pré-paiement (advance purchase), ou transmettre à la Société ses coordonnées bancaires en cas d’option pour un plan flexible.</p>
+                <p>-         Toute réservation de plus de 5 chambres peut entraîner des conditions particulières et des frais supplémentaires.</p>
+                <p>Merci de contacter l’hôtel au + 33 (0)1 35 35 35 35.</p>
+                <p>La confirmation de la commande entraîne acceptation des présentes conditions de vente, la reconnaissance d’en avoir parfaite connaissance et la renonciation à se prévaloir de ses propres conditions d’achat ou d’autres conditions.</p>
+                <p>L’ensemble des données fournies et la confirmation enregistrée vaudront preuve de la transaction. La confirmation vaudra signature et acceptation des opérations effectuées.</p>
+                <p>La Société transmet au Client, par tout moyen (courrier électronique, courrier simple, télécopie, etc.), la confirmation de la commande enregistrée.</p>
+                <p>La réservation n’est ferme et définitive qu’après réception de la confirmation adressée au Client par la Société.</p>
+                <p>Les tarifs, termes et conditions d’une réservation sont destinés à la vente de chambres d'hôtel conformément à leur utilité première (l’hébergement). L'hôtel se réserve le droit de modifier les tarifs, les termes et conditions, ou tout simplement pour annuler la réservation, si les chambres sont utilisées à d'autres fins telles que des shooting photo, des tournages de film, showroom, ou d’interview…</p>
+
+                <h6>VI    Modalités de paiement en ligne</h6>
+                <p>Selon le type de réservation effectuée, le prix est exigible en totalité au moment de la passation de la commande (plan en pré-paiement advance purchase) ou à l’issue du séjour du Client au sein de l’Hôtel (plan flexible).</p>
+                <p>Dans tous les cas et afin de garantir sa réservation, il est demandé au Client de communiquer son numéro de carte bancaire, la transmission se faisant par mode sécurisé.</p>
+                <p>En cas de paiement au moment de la passation de la commande, les informations de carte bancaire transmises par le Client par le biais d’un système sécurisé à la Société permettent à cette dernière de débiter la carte pour le montant total du séjour, toujours de manière sécurisée. Le compte bancaire du Client est débité le jour de la commande, la facture étant transmise par la Société au Client le jour de son départ de l’Hôtel.</p>
+                <p>Veuillez noter que la carte de crédit utilisée pour effectuer la réservation devra être présentée à l'arrivée par son porteur. A défaut, une nouvelle carte de crédit sera demandée pour le règlement à l'arrivée.</p>
+                <p>Dans le cas d'une prise en charge du séjour par une tierce personne, l'hôtel exigera des documents pour la sécurité de la transaction.</p>
+                <p>Veuillez noter également que l'hôtel se réserve le droit d'effectuer une pré-autorisation sur votre carte de crédit à tout moment avant votre arrivée.</p>
+
+                <h6> VII    Modification et/ou annulation d’une réservation</h6>
+                <p>Les annulations et/ou modifications des réservations peuvent être autorisées selon le plan tarifaire opté par le Client.</p>
+                <p>En cas d’option pour un plan flexible, toute demande de modification et/ou annulation d’une réservation doit être formulée dans les meilleurs délais et au plus tard dans les délais suivants, selon l’établissement concerné :</p>
+                <p>En période de basse et moyenne saison (sauf périodes de salons et événements spéciaux) : au minimum 24 heures avant le début du séjour.</p>
+                <p>En période de haute saison et périodes de salons : au minimum 48 heures avant le début du séjour.</p>
+                <p>En période événements spéciaux, ce délai est porté à 72h.</p>
+
+                <h6>VIII   Délogement</h6>
+                <p>En cas de non disponibilité de l’Hôtel ou en cas de force majeure, ce dernier se réserve la possibilité de faire héberger totalement ou partiellement le Client dans un hôtel de catégorie équivalente ou supérieure, proposant des prestations de même nature. Le transfert sera alors à la charge de l’hôtelier qui ne pourra être recherché en paiement d’une quelconque indemnité supplémentaire.</p>
+
+                <h6>IX   Services annexes – Packages</h6>
+                <p>Les commandes de services annexes et/ou packages ne pourront être passées qu’en même temps que la réservation d’un séjour au sein de l’établissement à une date donnée et prédéterminée.</p>
+                <p>Ils ne pourront être utilisés par le Client qu’au cours de son séjour au sein de l’Hôtel. Ils pourront être modifiés et/ou annulés que dans les conditions de l’article VII des présentes.</p>
+
+                <h6>X    Force majeure</h6>
+                <p>La force majeure s’entend de tout évènement extérieur aux parties présentant un caractère à la fois imprévisible et insurmontable qui empêche soit le client, soit l’hôtelier d’assurer tout ou partie des obligations prévues au contrat.</p>
+                <p>Il en est notamment ainsi en cas de grève, insurrection, émeute, prohibitions édictées par les autorités gouvernementales ou publiques.</p>
+                <p>Il est expressément convenu que la force majeure suspend, pour les parties, l’exécution de leurs obligations réciproques et que chaque partie supporte la charge des frais qui en découlent.</p>
+                <p>Les Clients supporteront notamment seuls les frais supplémentaires qui pourraient être engagés pour permettre la poursuite du voyage, à la suite de la survenance d’un cas de force majeure.</p>
+
+                <h6>XI   Réclamations</h6>
+                <p>Toute réclamation doit être adressée à l’adresse suivante : HOTELCOP - 1 AVENUE MONTAIGNE - 75008 PARIS - FRANCE, et ce dans un délai de 15 jours suivant le départ du séjour faisant l’objet de la dite réclamation. Passé ce délai, aucune réclamation ne pourra être prise en compte.</p>
+
+                <h6>XII   Informatique et libertés</h6>
+                <p>En application de la loi 78-17, dite informatique et libertés, les clients sont avertis que leur réservation fait l’objet d’un traitement nominatif informatisé. Les Clients disposent d’un droit d’accès et de rectification des données saisies, qui s’exerce auprès du siège social : HOTELCOP - 1 AVENUE MONTAIGNE - 75008 PARIS - FRANCE. Il est précisé que ces informations ne sont pas communiquées à des tiers.</p>
+                <p>La Société propose un accès internet en wifi. Le Client s’engage à ce que les ressources informatiques mises à sa disposition ne soit en aucune manière utilisées à des fins de reproduction, de représentation, de mise à disposition ou de communication au public d’œuvres ou d’objets protégés par un droit d’auteur, par un droit voisin tels que des textes, images photographies, œuvres musicales audiovisuelles, logiciels et jeux vidéo, sans l’autorisation des titulaires des droits prévus aux livre I et II du code de la propriété intellectuelle lorsque cette autorisation est requise. </p>
+                <p>L’Hôtel dispose d’un système de vidéosurveillance au sein des parties communes du bâtiment ainsi que du parking.</p>
+
+                <h6>XIII   Responsabilités</h6>
+                <p>La Société décline toute responsabilité en cas de vol, perte, dégradation des effets appartenant aux clients durant leur séjour.</p>
+                <p>Le Client sera tenu pour responsable de tout dommage, de toute dégradation, de tout acte de vandalisme qui pourrait survenir du fait de l’occupation des locaux et/ou du fait des participants et/ou du personnel dont il a la charge, tant aux biens mobiliers, de décoration et immobiliers appartenant ou non à l’hôtel.De ce fait, la Société dispose de toute faculté pour demander au Client de quitter l’établissement sans aucune indemnité et sans aucun remboursement du séjour en cours, et de rembourser les dommages causés par ces actes.</p>
+                <p>La Société, dans le processus de vente en ligne, n’est tenue que par une obligation de moyens. Sa responsabilité ne pourra être engagée pour un dommage résultant de l’utilisation du réseau Internet tel que perte de données, intrusion, virus, rupture du service, ou autres problèmes involontaires.</p>
+
+                <h6>XIV   Loi Applicable</h6>
+                <p>Les présentes Conditions générales de vente sont régies par la loi française. Il en est ainsi pour les règles de fond comme pour les règles de forme. Les litiges relèveront de la compétence exclusive des juridictions françaises.</p>
+            </section>
+            <a href="index.html" class="agold">Revenir à l'accueil</a>
+        </main>
+
+        <footer class="footer footer-marge">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="newsletter col-md-4 mb-4 row justify-content-center">
+                        <p class="col-10 col-md-12 mb-3">Découvrez en avant-première nos nouveautés, nos destinations coup de coeur et bénéficiez d'offres exclusives en vous inscrivant à notre newsletter.</p>
+                        <form>
+                            <input type="text" name="inscriptions" id="inscription" placeholder="Saissez votre e-mail" class="mr-3 ml-3">
+                            <input type="submit" value="S'abonner" class="mt-3">
+                        </form>
+                    </div>
+                    <ul class="col-md-4 mb-4 order-md-first text-md-left">
+                        <li><a href="livre-d-or.html">Livre d'or</a></li>
+                        <li><a href="contact.html">Contact</a> / <a href="carriere.html">Carrière</a></li>
+                        <li><a href="planDuSite.html">Plan du site</a></li>
+                        <li><a href="mentions-légales.html">Mentions Légales</a></li>
+                        <li><a href="cgv.html">Conditions Générales de Vente</a></li>
+                    </ul>
+                    <address class="col-md-4 mb-4 text-md-right">
+                        <p>HOTELCOP</p>
+                        <p>1 avenue Montaigne</p>
+                        <p>75008 Paris</p>
+                        <p>+33123456789</p>
+                        <a href="https://www.google.com/maps/place/1+Avenue+Montaigne,+75008+Paris/@48.8650712,2.2998897,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66fdd0dd39a4d:0x508194b82b12f012!8m2!3d48.8650712!4d2.3020784" target="_blank">Voir la Carte</a>
+                    </address>
+                    <div class="liste-reseau-sociaux col-md-12 mb-4">
+                        <a href="" target="_blank"><img src="images/trame/circle-facebook.svg" class="col-md-3" alt="Facebook"></a>
+                        <a href="" target="_blank"><img src="images/trame/circle-instagram.svg" class="col-md-3" alt="Instagram"></a>
+                        <a href="" target="_blank"><img src="images/trame/circle-twitter.svg" class="col-md-3" alt="Twitter"></a>
+                        <a href="" target="_blank"><img src="images/trame/circle-linkedin.svg" class="col-md-3" alt="linkedin"></a>
+                        <a href="" target="_blank"><img src="images/trame/circle-youtube.svg" class="col-md-3" alt="youtube"></a>
+                        <a href="" target="_blank"><img src="images/trame/circle-whatsapp.svg" class="col-md-3" alt="whatsapp"></a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2020 HOTELCOP, Paris Tous droits réservés</p>
+                </div>
+            </div>
+         </footer>
+    </body>
+</html>

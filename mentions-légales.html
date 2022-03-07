@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Mentions Légales | Hotel HOTELCOP</title>
+        <meta name="author" content="Aminata & Guillaume">
+        <meta name="description" content="Aminagui.Co a le plaisir de vous inviter dans leur hôtel de luxe, L'hôtel HôtelCop.">
+        <meta name="keywords" content="paris, hôtel, palace, luxe, spa, massage">
+
+        <!-- BOOSTRAP / JQUERY(UI) / FONT AWESOME -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" rel="stylesheet">
+
+        <!-- FONT-FAMILY -->
+        <link href="https://fonts.googleapis.com/css?family=Judson&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+        <!-- CSS ET JSS PERSO -->
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+
+        <!-- MENU FIXED -->
+
+        <div class="decalage-menu" id="accueil"></div>
+        <div class="menu">
+            <div class="fixed-top">
+
+                <!-- DIV RECHERCHE -->
+
+                <div id="barre_recherche">
+                    <div class="row justify-content-start align-items-center">
+                        <a href="" class="ml-5 mr-4"><img src="images/trame/loupe-noire.png" alt="Rechercher" class="loupe mt-0"></a>
+                        <input class="" type="text" name="recherche" id="recherche-input" placeholder="Rerchercher un restaurant, un casino, un spectacle... ">
+                    </div>
+                </div>
+
+                <!-- LES DEUX NAVBARS -->
+
+                <nav class="nav1 d-none d-md-block">
+                    <div class="row centre">
+                        <ul class="row">
+                            <li class="decalage"></li>
+                            <li style="color:white" id="date_nav"><script>afficheDate(); timer = window.setInterval("afficheDate()", 1000);</script></li>
+                            <li class="border-right"><a href='https://www.google.com/maps/place/1+Avenue+Montaigne,+75008+Paris/@48.8650712,2.2998897,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66fdd0dd39a4d:0x508194b82b12f012!8m2!3d48.8650712!4d2.3020784' target="_blank"><img src="images/trame/logo-maps.png" alt="Localisation" class="maps"></a></li>
+                        </ul>
+                        <ul class="row">
+                            <li class="plop">
+                                <button id="recherche_nav" style="color: white">
+                                    <img src="images/trame/loupe-blanche.png" alt="Recherche" class="loupe2">
+                                    <span>Recherche</span>
+                                </button>
+                            </li>
+                            <li>
+                                <select id="pays" name="pays">
+                                    <option value="fr">Fr</option>
+                                    <option value="all">En</option>
+                                </select>
+                            </li>
+                            <li class="decalage"><a href="panier.html" class="gold"><i class="fas fa-shopping-cart mr-3"></i>Panier</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="fond">
+                    <div class="container position-relative">
+                        <nav class="nav2 navbar navbar-expand-md">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                                <ul class="navbar-nav text-left">
+                                    <li class="nav-item">
+                                        <a class="nav-link mt-4 mt-md-0" href="chambre.html">CHAMBRES / SUITES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="restaurant.html">RESTAURANT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="bien-etre.html">BIEN-ÊTRE</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHotel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            L'HOTEL
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="hotel.html#qui">Qui sommes-nous</a>
+                                            <a class="dropdown-item" href="hotel.html#acces">Accès</a>
+                                            <a class="dropdown-item" href="hotel.html#evenement">Evénements</a>
+                                            <a class="dropdown-item" href="hotel.html#presse">Presse</a>
+                                            <a class="dropdown-item" href="contact.html">Contact</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="livre-d-or.html">LIVRE D'OR</a>
+                                    </li>
+                                    <li class="nav-item dropdown d-md-none">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLangue" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            LANGUE
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="">Français</a>
+                                            <a class="dropdown-item" href="">English</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item d-md-none">
+                                        <a class="nav-link" href="panier.html">PANIER</a>
+                                    </li>
+                                    <li class="nav-item d-md-none">
+                                        <button type="button" class="agold" data-toggle="modal" data-target="#modalReservation" data-whatever="@getbootstrap">RESERVER</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <a href="index.html#accueil" class="logo d-block d-md-none">HôtelCop</a>
+                        <button class="recherche d-md-none" id="recherche_nav_sm">
+                            <img src="images/trame/loupe-noire.png" alt="Recherche" class="loupe">
+                        </button>
+                    </div>
+                    <button type="button" class="reserver d-none d-md-block" data-toggle="modal" data-target="#modalReservation" data-whatever="@getbootstrap">RESERVER</button>
+                    <a href="index.html#accueil" class="logo2 d-none d-md-block">HôtelCop</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL FORM RESERVATION -->
+
+        <div class="modal fade" id="modalReservation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title mx-auto gold" id="exampleModalLabel1">Réservation</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row justify-content-center">
+                            <div class="form-group col-8">
+                                <label for="nom">Nom</label>
+                                <input class="form-control mt-2" type="text" name="nom" id="nom" placeholder="Saisissez votre nom">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="prenom">Prénom</label>
+                                <input class="form-control mt-2" type="text" name="prenom" id="prenom" placeholder="Saisissez votre prénom">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="email">Email</label>
+                                <input class="form-control mt-2" type="email" name="email" id="email" placeholder="Saisissez votre email">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="numero">Téléphone</label>
+                                <input class="form-control mt-2" type="tel" name="numero" id="numero" placeholder="Saisissez votre n° de téléphone">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="datepicker1">Arrivée</label>
+                                <input  class="form-control mt-2" type="text" name="arrivee" id="datepicker1">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="datepicker2">Départ</label>
+                                <input class="form-control mt-2" type="text" name="depart" id="datepicker2">
+                            </div>
+                            <div class="form-group col-12 mb-4">
+                                <label for="chambre">Gamme de chambre</label>
+                                <select id="chambre">
+                                    <option>-</option>
+                                    <option>Confort</option>
+                                    <option>Classique</option>
+                                    <option>Deluxe</option>
+                                    <option>Suite</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="nbr-chambres">Chambres</label>
+                                <select id="nbr-chambres" name="nbr-chambres">
+                                    <option>-</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group mr-4 ml-4">
+                                <label for="adulte">Adultes</label>
+                                <select name="persons" id="adulte">
+                                    <option>-</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="enfant">Enfants</label>
+                                <select name="persons" id="enfant">
+                                    <option>-</option>
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn agold mx-auto">Confirmer réservation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL FORM RESERVATION MASSAGE -->
+
+        <div class="modal fade" id="modalReservationMassage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title mx-auto gold" id="exampleModalLabel2">Réservation</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row justify-content-center">
+                            <div class="form-group col-8">
+                                <label for="nomM">Nom</label>
+                                <input class="form-control mt-2" type="text" name="nomM" id="nomM" placeholder="Saisissez votre nom">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="prenomM">Prénom</label>
+                                <input class="form-control mt-2" type="text" name="prenomM" id="prenomM" placeholder="Saisissez votre prénom">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="emailM">Email</label>
+                                <input class="form-control mt-2" type="email" name="emailM" id="emailM" placeholder="Saisissez votre email">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="numeroM">Téléphone</label>
+                                <input class="form-control mt-2" type="tel" name="numeroM" id="numeroM" placeholder="Saisissez votre n° de téléphone">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="datepicker3">Jour</label>
+                                <input  class="form-control mt-2" type="text" name="jour" id="datepicker3">
+                            </div>
+                            <div class="form-group col-8">
+                                <label for="arrivee">Horaire</label>
+                                <input  class="form-control mt-2" type="time" name="arrivee" id="arrivee">
+                            </div>
+                            <div class="form-group col-12 mb-4">
+                                <label for="massage">Gamme de massage</label>
+                                <select id="massage">
+                                    <option>-</option>
+                                    <option>Soin Détente</option>
+                                    <option>Soin Découverte</option>
+                                    <option>Soin Relaxant</option>
+                                    <option>Soint Plaisir</option>
+                                </select>
+                            </div>
+                            <div class="form-group mr-4">
+                                <label for="adultes">Nombres de personne</label>
+                                <select name="persons" id="adultes">
+                                    <option>-</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn agold mx-auto">Confirmer réservation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="decal_menu_recherche"></div> <!-- Décale la page en cas d'ouverture de la barre recherche -->
+
+        <header class="header-vide">
+            <div class="en-tete row flex-column">
+                <h1>HOTELCOP PARIS</h1>
+                <div class="row mt-4">
+                    <a href="" class="mr-3">
+                        <img src="images/trame/partage.png" alt="Partager" class="partage">
+                    </a>
+                    <a href="">
+                        <img src="images/trame/imprimer.png" alt="Imprimer" class="partage">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="mentions-légales container">
+            <section class="text-left">
+                <h3>Mentions <span class="gold">Légales</span></h3>
+
+                <p>La consultation, la navigation et l’utilisation du site <a href="index.html">www.hotelcop.com</a> (le « Site ») implique l’acceptation sans réserve des conditions générales d’utilisation ici décrites. Ces conditions sont susceptibles d’être modifiées ou complétées à tout moment ;  les utilisateurs sont donc invités à les consulter de manière régulière.</p>
+                <p>Le Site est exploité par la Société HOTELCOP.</p>
+
+                <h6>I Droits d’auteur / Copyright</h6>
+                <p>Le contenu, la présentation et chacun des éléments, y compris les noms de domaine, marques, logos, enseignes, dessins, illustrations, photographies, textes, graphiques et autres fichiers apparaissant sur le Site sont la propriété exclusive de la Société HOTELCOP, à l’exception des marques, logos et enseignes détenus par des tiers et présentés comme tels. Tous ces éléments sont protégés par les lois en vigueur en matière de propriété intellectuelle.</p>
+                <p>Aucun élément composant le Site ne peut être copié, reproduit, modifié, réédité, chargé, dénaturé, transmis ou distribué de quelque manière que ce soit, sous quelque support que ce soit, de façon partielle ou intégrale, sans l’autorisation écrite et préalable de la société HOTELCOP.</p>
+                <p>Toute reproduction des marques et/ou logos figurant sur ce Site, par quelque moyen que ce soit, sans autorisation préalable et écrite de la société HOTELCOP, est strictement interdite.</p>
+                <p>La communication au public, en totalité ou en partie, et l’utilisation à des fins commerciales du contenu de ce site sont expressément interdites.</p>
+                <p>Toute infraction aux dispositions qui précèdent constituerait une atteinte aux droits de la société HOTELCOP passible, notamment, de poursuites pour contrefaçon.</p>
+
+                <h6>II Liens</h6>
+                <p>Les liens présents sur le Site peuvent orienter l’utilisateur sur des sites extérieurs dont le contenu ne peut en aucune manière engager la responsabilité de la société HOTELCOP. Les sociétés souhaitant mettre en place un lien vers l’un des sites de la société HOTELCOP doivent faire une demande préalable en ligne ou par courrier en indiquant leur raison sociale, leur activité, l’URL de leur site Internet et leur adresse à : <a href="">hotelcop@gmail.com</a></p>
+
+                <h6>III Informations nominatives</h6>
+                <p>Le traitement des informations nominatives transmises par ce Site est placé sous la responsabilité de la société HOTELCOP dans le respect de la législation en vigueur en Principauté de Monaco relative à la protection des informations nominatives. Aucune information de l’utilisateur du Site n’est publiée, échangée, transférée ou cédée à un tiers quelconque à l’insu de l’utilisateur.</p>
+                <p>La société HOTELCOP est très soucieuse du respect de votre vie privée et veille scrupuleusement au respect de la protection des informations nominatives communiquées.</p>
+                <p>A cet égard, le présent Site a fait l’objet d’une déclaration de traitement automatisé d’informations à caractère personnel auprès de la C.C.I.N.</p>
+                <p>La collecte d’informations personnelles ou nominatives par la société HOTELCOP est strictement limitée aux besoins des services proposés sur le Site en indiquant l’obligation ou non de fournir ces informations lorsqu’elles sont saisies directement par l’utilisateur du Site. Ces données sont conservées pendant une durée de 3 ans à compter du dernier contact avec notre société.</p>
+                <p>Conformément à la loi n° 1.165 du 23 décembre 1993, modifiée, relative à la protection des informations nominatives, et à la règlementation applicable en Principauté de Monaco, vous disposez d’un droit d’accès, de rectification, d’opposition, de limitation et de suppression portant sur les données nominatives vous concernant en écrivant, par courrier électronique à <a href="">hotelcop@gmail.com</a> ou par voie postale, à :</p>
+                <p>La société HOTELCOP</p>
+                <p>Direction Marketing</p>
+                <p>Place du Casino</p>
+                <p>98000 Monaco – Principauté de Monaco</p>
+
+                <h6>IV Cookies</h6>
+                <p>Notre Site est conçu pour être particulièrement attentif aux besoins de nos clients. C’est entre autres pour cela que nous faisons usage de cookies. Le cookie a pour but de signaler votre passage sur notre Site. Les cookies ne sont donc utilisés par <a href="index.html">www.hotelcop.com</a> que dans le but d’améliorer le service personnalisé qui vous est destiné.</p>
+                <p>Un « cookie » est un fichier texte qui enregistre des informations relatives à la navigation d’un internaute sur des sites mais il ne permet pas l’identification de l’utilisateur qui reste anonyme. Les statistiques fournies par les cookies permettent de connaître le niveau d’activité de notre site internet, ainsi que les pages les plus fréquentées. Ils sont nécessaires à la fourniture de nos services et ont uniquement pour objectif d’améliorer nos prestations.</p>
+                <p>En poursuivant la navigation, conformément aux dispositions légales en vigueur, vous acceptez l’utilisation des Cookies pour une durée maximale de treize (13) mois. Vous pouvez toutefois refuser l’utilisation des Cookies en modifiant les paramètres de votre Navigateur Web</p>
+
+
+                <h6>V Responsabilité</h6>
+                <p>L’utilisation des informations figurant sur ce Site se fait sous l’entière et seule responsabilité de l’utilisateur qui assume la totalité des conséquences pouvant en découler sans que la responsabilité de la société HOTELCOP puisse être recherchée à ce titre.</p>
+                <p>La société HOTELCOP met tout en œuvre pour offrir aux utilisateurs du Site des informations et outils préalablement vérifiés et efficaces. Elle ne saurait, toutefois, être tenue pour responsable des erreurs, d’une absence de disponibilité des informations ou de la présence de virus sur le Site.</p>
+                <p>Les photographies et les textes reproduits ne sont pas contractuels.</p>
+                <p>Malgré l’attention apportée par la société HOTELCOP aux informations contenues sur ce Site, sa responsabilité ne saurait, toutefois, être recherchée en cas d’erreur, fausse information ou information approximative, mais également, défaut ou insuffisance de traduction, qui y seraient contenus et portant, notamment, sur les contenus, horaires, tarifs, menus, plans, descriptifs…</p>
+
+                <h6>VI Droit applicable et litiges</h6>
+                <p>Les présentes conditions d’utilisation et la relation entre Monte-Carlo SBM et les utilisateurs du Site sont soumises au droit monégasque et tout différend n'ayant pu trouver une issue amiable sera porté devant les tribunaux de la Principauté de Monaco.</p>
+
+                <h6>VII Edition / Hébergement</h6>
+                <p>Ce Site est édité par : SOCIETE HOTELCOP au capital de 50 000 000 euros, immatriculée au Répertoire du Commerce et de l’Industrie de Paris sous le N°  12 S 235 et dont le n° de TVA intracommunautaire est FR 08 0000 1 2345.</p>
+                <p>Siège social : HOTELCOP, 1 AVENUE MONTAIGNE, 75008 PARIS</p>
+                <p>Directeur de la publication : Mr Dupond DUPONT</p>
+                <p>Ce Site est hébergé par : O2SWITCH - www.o2switch.fr</p>
+                <p>222-224 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand</p>
+
+                <h6>VIII Contact Site Web</h6>
+                <p>Pour toute question ou demande concernant l’utilisation de ce Site veuillez, contacter le webmaster à l’adresse suivante : <a href="">hotelcop@gmail.com</a></p>
+            </section>
+            <a href="index.html" class="agold">Revenir à l'accueil</a>
+        </main>
+
+        <footer class="footer footer-marge">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="newsletter col-md-4 mb-4 row justify-content-center">
+                        <p class="col-10 col-md-12 mb-3">Découvrez en avant-première nos nouveautés, nos destinations coup de coeur et bénéficiez d'offres exclusives en vous inscrivant à notre newsletter.</p>
+                        <form>
+                            <input type="text" name="inscriptions" id="inscription" placeholder="Saissez votre e-mail" class="mr-3 ml-3">
+                            <input type="submit" value="S'abonner" class="mt-3">
+                        </form>
+                    </div>
+                    <ul class="col-md-4 mb-4 order-md-first text-md-left">
+                        <li><a href="livre-d-or.html">Livre d'or</a></li>
+                        <li><a href="contact.html">Contact</a> / <a href="carriere.html">Carrière</a></li>
+                        <li><a href="planDuSite.html">Plan du site</a></li>
+                        <li><a href="mentions-légales.html">Mentions Légales</a></li>
+                        <li><a href="cgv.html">Conditions Générales de Vente</a></li>
+                    </ul>
+                    <address class="col-md-4 mb-4 text-md-right">
+                        <p>HOTELCOP</p>
+                        <p>1 avenue Montaigne</p>
+                        <p>75008 Paris</p>
+                        <p>+33123456789</p>
+                        <a href="https://www.google.com/maps/place/1+Avenue+Montaigne,+75008+Paris/@48.8650712,2.2998897,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66fdd0dd39a4d:0x508194b82b12f012!8m2!3d48.8650712!4d2.3020784" target="_blank">Voir la Carte</a>
+                    </address>
+                    <div class="liste-reseau-sociaux col-md-12 mb-4">
+                        <a href="" target="_blank"><img src="images/trame/circle-facebook.svg" class="col-md-3" alt="Facebook"></a>
+                        <a href="" target="_blank"><img src="images/trame/circle-instagram.svg" class="col-md-3" alt="Instagram"></a>
+                        <a href="" target="_blank"><img src="images/trame/circle-twitter.svg" class="col-md-3" alt="Twitter"></a>
+                        <a href="" target="_blank"><img src="images/trame/circle-linkedin.svg" class="col-md-3" alt="linkedin"></a>
+                        <a href="" target="_blank"><img src="images/trame/circle-youtube.svg" class="col-md-3" alt="youtube"></a>
+                        <a href="" target="_blank"><img src="images/trame/circle-whatsapp.svg" class="col-md-3" alt="whatsapp"></a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2020 HOTELCOP, Paris Tous droits réservés</p>
+                </div>
+            </div>
+         </footer>
+    </body>
+</html>

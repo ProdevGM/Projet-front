@@ -1,0 +1,437 @@
+/* --------- GENERAL --------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+    vertical-align: baseline;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html{font-size: 65%;}
+
+body{
+    box-sizing: border-box;
+    margin-top: 52px; /*taille du menu fixed*/
+    font-family: 'Playfair Display', serif;
+    color: black;
+    text-align: center;
+    align-items: ;
+}
+
+.decalage-menu{   /*Permet de positionner correctement la page en cas d'utilisation du menu*/
+    position: relative;
+    bottom: 70px;
+}
+
+.header-vide{
+    background: none;
+    height: 100%;
+}
+
+button:focus{
+    outline: none; /* Retire le cadre autour quand focus */
+}
+
+p{
+    font-size: 1.1rem;
+    color: #4c4c4c;
+    font-family: 'Judson', serif;
+    margin-top: 0.5rem;
+}
+
+a{color: black;}
+a:hover{
+    text-decoration: none;
+    color: #a68a3a;
+    transition: 0.7s;
+}
+
+.gold{color: #a68a3a;}
+.agold{
+    color: #a68a3a;
+    border: 2px solid #a68a3a;
+    padding: 1rem;
+}
+.agold:hover{
+    background-color: #a68a3a;
+    color: #fff;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+section{margin: 7rem 0;}
+
+h1{font-size: 4rem;}
+
+h2{
+    font-size: 3rem;
+    background: white;
+    margin-bottom: 3rem;
+    z-index: 100;
+}
+
+h3{
+    font-size: 2.8rem;
+    margin: 2rem;}
+
+h5{font-size: 2.2rem;}
+
+h6{
+    font-size: 1.8rem;
+    margin: 2rem;
+}
+
+/* --------- TRAME PRINCIPALE--------- */
+    /* --- Menu --- */
+
+.menu li{
+    padding: 0 15px;
+    font-size: 1.15rem;
+}
+
+/* --- Barre recherche --- */
+#barre_recherche{
+    background: #F6F6F6;
+    display: none;
+}
+
+#barre_recherche div{margin: 0 auto !important;}
+
+#barre_recherche input{
+    display: block;
+    background: #F6F6F6;
+    height: 40px;
+    width: 70%;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    border: none;
+}
+
+#barre_recherche input:focus {outline:  none;}
+
+#decal_menu_recherche{
+    height: 70px;
+    display: none;
+}
+
+/* --- Première nav (noir) --- */
+.menu .nav1{
+    width: 100%;
+    background: #4c4c4c;
+}
+
+.menu .nav1 .centre{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 42px;
+}
+
+.menu .nav1 li{border-left: solid white 1px;}
+.menu .nav1 .border-right{border-right: solid white 1px;}
+.menu .nav1 .decalage{width: 13.2rem;}
+.menu .nav1 a{color: white;}
+.menu .nav1 .maps{height: 1.2rem;}
+
+.menu .loupe2{
+    height: 1.1rem;
+    margin-right: 10px;
+}
+
+.menu .logo{
+    position: absolute;
+    top: 0;
+    margin: 12px 43%;
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+}
+
+
+
+/* --- Seconde nav (blanc) --- */
+.menu .fond{
+    box-shadow: 0 4px 1em black;
+    position : relative; /*Pour positionner des éléments ci-dessous en position:absolute*/
+    background: white;
+}
+
+.menu .reserver{
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 52px;
+    padding: 0 1rem;
+    background: #a68a3a;
+    font-size: 2rem;
+    color: white;
+    display: none;
+}
+
+.menu .logo2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 52px;
+    padding: 0 1rem;
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+}
+
+.menu .navbar-toggler{border: none;}
+
+.menu .loupe{
+    height: 3rem;
+    margin: 10px 10px 0;
+}
+
+.menu .recherche{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu .nav-item button{
+    color: #a68a3a;
+    border: 1.5px solid #a68a3a;
+    padding: 0.5rem;
+}
+
+.menu .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(76, 76, 76)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.menu .nav2{
+    min-height: 52px;
+    padding: 0;
+}
+
+.menu .nav2 a{
+    color: #4c4c4c;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.menu .dropdown-menu {border: none;}
+
+.menu .dropdown-menu a{padding-left: 20px !important;}
+
+.menu .nav2 a:hover{
+    color: #a68a3a;
+    transition: 0.5s;
+}
+
+/* --- Header --- */
+header{
+    height: calc(100vh - 94px);
+    background: url(../images/accueil/accueil.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 7rem;
+}
+
+header div{align-items : center;}
+
+header .en-tete{background: white;}
+
+.partage{height: 1.4rem;}
+
+header h1{margin-top: 2rem;}
+
+header a{margin-bottom: 1rem;}
+
+/* --- Block ---*/
+.block1, .block2{
+    background: white;
+    justify-content: center;
+    align-content: center;
+    margin-top: -10%;
+}
+
+/* --- Formulaire ---*/
+.modal-content{
+    border : 2px solid #a68a3a;
+    border-radius: 1rem;
+}
+
+.modal-header{border: none;}
+
+.modal-footer{border: none;}
+
+/* --- Footer --- */
+.footer-marge{
+    margin-top: 7rem;
+}
+
+.footer{
+    background-color: #4c4c4c;
+    padding-top: 2rem;
+    line-height: 2rem;
+}
+
+footer{color: #b9b9b4;}
+
+footer p{
+    color: #b9b9b4;
+    margin-top: 0;
+}
+
+footer .newsletter{line-height: 1.5rem}
+
+footer .copyright{font-size: 0.8rem;}
+
+footer a{color:#b9b9b4;}
+
+footer .liste-reseau-sociaux img{
+    width: 4rem;
+    padding: 0 0.3rem;
+}
+
+footer .newsletter input{border-color: transparent;}
+
+footer .newsletter input[type ='submit']{
+    border-color: transparent;
+    background: #a68a3a;
+    color : white;
+}
+
+/*--------- CHAMBRES ---------*/
+.header-chambres{
+    background: url(../images/chambre/chambre1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.chambres h3{margin-left: 0;}
+.chambres .sejour{line-height: 1.5rem;}
+
+.chambres .detail li{
+    line-height: 2.2rem;
+    color: #4c4c4c;
+}
+
+/*--------- RESTAURANT ---------*/
+.header-restaurant{
+    background: url(../images/restaurant/restaurant1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/*--------- BIEN-ETRE ---------*/
+.header-bien-etre{
+    background: url(../images/spa/spa1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/*--------- L'HOTEL ---------*/
+.hotel a:hover{font-weight: bold;}
+.hotel .ifram{height: 25rem;}
+.hotel .hauteur-ligne{line-height: 1.5rem;}
+
+/*--------- LIVRE D'OR ---------*/
+.livre-d-or textarea{
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.livre-d-or input[type="submit"]{
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.livre-d-or img{height: 10rem;}
+
+.livre-d-or li{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 2rem 0;
+}
+
+/*--------- PANIER ---------*/
+.panier label{
+    font-family: 'Judson', serif;
+    color: #4c4c4c;
+}
+
+.panier input{background: white;}
+
+
+/*--------- CARRIERE ---------*/
+
+.carriere div{margin: 1.5rem 0;}
+
+.carriere label{
+    padding: 0;
+    font-weight: bold;
+}
+
+/*--------- CONTACT ---------*/
+.contact .border1{
+    border-top: solid 1px rgba(76,76,76,0.5);
+    border-bottom: solid 1px rgba(76,76,76,0.5);
+}
+
+.contact .border2{border-bottom: solid 1px rgba(76,76,76,0.5);}
+
+
+/* --------- Plan du site --------- */
+.link-plan{
+    display: block;
+    font-size: 1.5rem
+}
+.box{
+    border: 3px solid black;
+    display: inline-block;
+    text-align: center;
+}
+
+.box1{
+    margin: 5px;
+    border: 3px solid #a68a3a;
+}
+/* --------- Parallax --------- */
+.p-400 {
+    padding: 350px 0;
+    background: transparent;
+}
+
+.section-one{
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment : fixed;
+}
+
+/* --------- RESPONSIVE --------- */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    html{font-size: 64%;}
+    body{margin-top: 94px;} /*hauteur des menus fixed*/
+    .decalage-menu{bottom: 120px;} /*Permet de positionner correctement la page en cas d'utilisation du menu*/
+
+    .block1, .block2{margin-top: 0;}
+    .block1 h2{margin-right: 15rem;}
+    .block2 h2{margin-left: 15rem;}
+
+    .menu .dropdown-menu a{
+        text-align: center;
+        padding-left: 0!important;
+    }
+
+}
+
+@media (min-width: 992px) {
+    html{font-size: 85%;}
+}
+
+@media (min-width: 1200px) {
+    html{font-size: 100%;}
+
+}
